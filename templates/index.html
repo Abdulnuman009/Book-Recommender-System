@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">My Book Recommender</a>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/top20">Top 20s</a></li>
+                <li><a href="/recommend">Recommend</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-white">Top 20 Books or Most Read Novels of All Time</h1>
+        <div class="row">
+            {% for i in range(book_name|length) %}
+            <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top: 20px;">
+                <a href="https://www.amazon.com/s?k={{ book_name[i] }}+{{ author[i] }}" target="_blank">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ image[i] }}">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <span class="copyable">{{ book_name[i] }}</span>
+                            </h3>
+                            <h4 class="card-text">Author - {{ author[i] }}</h4>
+                            <p class="card-votes">Votes - {{ votes[i] }}</p>
+                            <p class="card-rating">Rating - {{ rating[i] }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Book Recommender. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const copyableTitles = document.querySelectorAll('.copyable');
+
+        copyableTitles.forEach(copyable => {
+            copyable.addEventListener('click', function() {
+             const selection = window.getSelection();
+             const range = document.createRange();
+                range.selectNodeContents(this);
+                selection.removeAllRanges();
+                selection.addRange(range);
+
+            document.execCommand('copy');
+            selection.removeAllRanges();
+            });
+         });
+        });
+    </script>
+</body>
+
+</html>
