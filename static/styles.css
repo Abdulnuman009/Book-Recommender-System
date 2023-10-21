@@ -1,0 +1,140 @@
+/* Resetting margins for body */
+body {
+    margin: 0;
+    background-color: #141414;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #746e6e;
+    border-radius: 0;
+    border: none;
+    margin-bottom: -32px;
+    height: 73px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Container margins */
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Card layout */
+.card {
+    background-color: #1c1c1c;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    user-select: text;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 13px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px -1px;
+}
+
+.btn:hover {
+    background-color: #b9050f;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #141414;
+    color: #808080;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p{
+    margin: 385px 299px -349px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 51px;
+    margin-bottom: 10px;
+}
+
+a{
+    border-radius: 23px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 22px;
+    line-height: 20px;
+    color: black;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 19px;
+    font-size: 18px;
+    margin-top: 2px;
+    color: black;
+}
+
+.container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#aboutus{
+    text-align: center;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.col-md-3 {
+    width: 25%;
+    height: 76vh;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 67%;
+    height: auto;
+}
+
+
+
