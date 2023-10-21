@@ -15,6 +15,8 @@ Before you begin, ensure you have met the following requirements:
 
 - [Python] installed.
 - [Flask] framework.
+- Jupyter Notebook.
+- VSCode.
    
 ### Usage
 
