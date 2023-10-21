@@ -9,10 +9,6 @@ This Book Recommendation System is created by Mohammed Abdul Numan. The system i
 - Explore the top 20 books and most-read novels of all time.
 - Easy-to-use and user-friendly interface.
 
-## Getting Started
-
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
-
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
